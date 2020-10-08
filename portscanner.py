@@ -37,7 +37,7 @@ def scan_port(ipaddress, port):
 
 
 if __name__ == "__main__":
-    targets = input("[+] Enter Target/s to scan (split multiple targets with ,): ")
+    targets = input("[+] Enter Target/s to scan PORTS (split multiple targets with ,): ")
     if ',' in targets:
         for ip_add in targets.split(','):
             scan(ip_add.strip(' '))
